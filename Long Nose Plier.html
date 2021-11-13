@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>Long Nose Plier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="200px"></a>
+            </div>
+            <nav> 
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="products.html"> PRODUCTS </a></li>
+                    <li> <a href="about.html"> ABOUT </a></li>           
+                    <li> <a href="account.html"> ACCOUNT </a></li>        
+                    <li> <a href="cart.html"><img src="cart.png"width="30px" height="30px"></a></li>
+                </ul> s
+            </nav>
+        </div> 
+</div>
+<!----------- product info ------------------>
+<div class="small-container product-info">
+    <div class="info">
+        <div class="col-3">
+            <img src="long nose plier.jpeg" width="100%" id="ProductPic">
+        <div class="small-pic-row">
+            <div class="small-pic-col">
+                <img src="long nose plier.jpeg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="lnp1.jpg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="lnp2.jfif" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="lnp3.jfif" width="100%" class="small-pic">
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+            <p> PRODUCT / PLIERS </p>
+            <h1> Long Nose Plier </h1>
+            <h4> ₱179.00 </h4>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3> Product Description </h3><br>
+            <p> Long nose plier is use to grip small objects, 
+                reach awkward places, holding wires, bend loops, 
+                and attach wires. Work involving smaller gauge 
+                wire.
+                <br><br>
+                1pc. long nose plier. </p>
+        </div>   
+    </div>
+</div> 
+<!--Related Products-->
+<div class="small-container">
+    <div class="row related-Products">
+        <h2>Related Products</h2>
+    </div>
+</div>
+<div class="small-container">
+<!-- 1st set of products -->
+    <div class="row">
+        <div class="col-4">
+            <a href="Mechanical Plier.html"><img src="mechanical plier.jpeg"></a>
+            <h4> Mechanical Plier </h4>
+        </div>
+        <div class="col-4">
+            <a href="Circlip Plier.html"><img src="circlip plier.jpeg"></a>
+            <h4> Circlip Plier </h4>
+        </div>        
+        <div class="col-4">
+            <a href="Screwdriver.html"><img src="screwdriver.jpg"></a>
+            <h4> Screwdriver </h4>
+        </div>
+        <div class="col-4">
+            <a href="Bolt.html"><img src="bolt.jpeg"></a>
+            <h4> Bolt </h4>
+        </div>
+    </div>
+<!-- 2nd set of products -->
+    <div class="row">
+        <div class="col-4">
+            <a href="Screw.html"><img src="screw.jpeg"></a>
+            <h4> Screw </h4>
+        </div>
+        <div class="col-4">
+            <a href="Trouble Light.html"><img src="trouble light.jpg"></a>
+            <h4> Trouble Light </h4>
+        </div>
+        <div class="col-4">
+            <a href="Vacuum Pump.html"><img src="vacuum pump.jpg"></a>
+            <h4> Vacuum Pump </h4>
+        </div>
+        <div class="col-4">
+            <a href="Wheel Balancer.html"><img src="wheel balancer.jpeg"></a>
+            <h4> Wheel Balancer </h4>
+        </div>
+    </div>
+</div>
+<!--js for product info-->
+<script>
+    var ProductPic = document.getElementById("ProductPic");
+    var SmallPic = document.getElementsByClassName("small-pic")
+
+        SmallPic[0].onclick = function(){
+            ProductPic.src = SmallPic[0].src;
+        }
+        SmallPic[1].onclick = function(){
+            ProductPic.src = SmallPic[1].src;
+        }
+        SmallPic[2].onclick = function(){
+            ProductPic.src = SmallPic[2].src;
+        }
+        SmallPic[3].onclick = function(){
+            ProductPic.src = SmallPic[3].src;
+        }
+</script>
+</body>
+</html>
+
+
+
