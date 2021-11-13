@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Feeler Gauge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="200px"></a>
+            </div>
+            <nav> 
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="products.html"> PRODUCTS </a></li>
+                    <li> <a href="about.html"> ABOUT </a></li>           
+                    <li> <a href="account.html"> ACCOUNT </a></li>        
+                    <li> <a href="cart.html"><img src="cart.png"width="30px" height="30px"></a></li>
+                </ul> 
+            </nav>
+        </div> 
+</div>
+<!----------- product info ------------------>
+<div class="small-container product-info">
+    <div class="info">
+        <div class="col-3">
+            <img src="feeler gauge.jpeg" width="100%" id="ProductPic">
+        <div class="small-pic-row">
+            <div class="small-pic-col">
+                <img src="feeler gauge.jpeg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="fg2.jpg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="fg1.jpg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="fg3.jpg" width="100%" class="small-pic">
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+            <p> PRODUCT / OTHERS </p>
+            <h1> Feeler Gauge </h1>
+            <h4> ₱210.25 </h4>
+            <select>
+                <option>24pcs.</option>
+                <option>26pcs.</option>
+                <option>32pcs.</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3> Product Description </h3><br>
+            <p> A feeler gauge is a tool used to measure gap widths.
+                Feeler gauges are mostly used in engineering to measure the
+                clearance between two parts.
+                <br><br>
+                24pcs., 26pcs. & and 32pcs blades of options for feeler gauge blades.</p>
+        </div>   
+    </div>
+</div> 
+<!--Related Products-->
+<div class="small-container">
+    <div class="row related-Products">
+        <h2>Related Products</h2>
+    </div>
+</div>
+<div class="small-container">
+<!-- 1st set of products -->
+<div class="row">
+    <div class="col-4">
+        <a href="Power Handle.html"><img src="power handle.jpg"></a>
+        <h4> Power Handle </h4>-2
+    </div>
+    <div class="col-4">
+        <a href="Scan Tool.html"><img src="scan tool.jpeg"></a>
+        <h4> Scan Tool </h4>-2
+    </div>
+    <div class="col-4">
+        <a href="Hand Tap Set.html"><img src="hand tap set.jpeg"></a>
+        <h4> Hand Tap Set </h4>-2
+    </div>
+    <div class="col-4">
+        <a href="Battery Carrier.html"><img src="battery carrier.jpeg"></a>
+        <h4> Battery Carrier </h4>-2
+    </div>
+</div>
+<!-- 2nd set of products -->
+<div class="row">
+    <div class="col-4">
+        <a href="Coil Spring Compressor.html"><img src="coil spring compressor.jpeg"></a>
+        <h4> Coil Spring Compressor </h4>-2
+    </div>
+    <div class="col-4">
+        <a href="Battery Carrier.html"><img src="battery carrier.jpeg"></a>
+        <h4> Battery Carrier </h4>-2
+    </div>     
+    <div class="col-4">
+        <a href="Flexible Funnel.html"><img src="flexible funnel.jpeg"></a>
+        <h4> Flexible Funnel </h4>-2
+    </div>
+    <div class="col-4">
+        <a href="Lug Wrench.html"><img src="lug wrench.jpeg"></a>
+        <h4> Lug Wrench </h4>-2
+    </div>
+</div>
+</div>
+<!--js for product info-->
+<script>
+    var ProductPic = document.getElementById("ProductPic");
+    var SmallPic = document.getElementsByClassName("small-pic")
+
+        SmallPic[0].onclick = function(){
+            ProductPic.src = SmallPic[0].src;
+        }
+        SmallPic[1].onclick = function(){
+            ProductPic.src = SmallPic[1].src;
+        }
+        SmallPic[2].onclick = function(){
+            ProductPic.src = SmallPic[2].src;
+        }
+        SmallPic[3].onclick = function(){
+            ProductPic.src = SmallPic[3].src;
+        }
+</script>
+</body>
+</html>
+
+
+

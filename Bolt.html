@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Bolt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="200px"></a>
+            </div>
+            <nav> 
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="products.html"> PRODUCTS </a></li>
+                    <li> <a href="about.html"> ABOUT </a></li>          
+                    <li> <a href="account.html"> ACCOUNT </a></li>        
+                    <li> <a href="cart.html"><img src="cart.png"width="30px" height="30px"></a></li>
+                </ul>   
+            </nav>
+        </div> 
+</div>
+<!----------- product info ------------------>
+<div class="small-container product-info">
+    <div class="info">
+        <div class="col-3">
+            <img src="bolt.jpeg" width="100%" id="ProductPic">
+        <div class="small-pic-row">
+            <div class="small-pic-col">
+                <img src="bolt.jpeg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="b1.jpg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="b2.jfif" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="b3.jpg" width="100%" class="small-pic">
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+            <p> PRODUCT / SCREWS AND DRIVERS</p>
+            <h1> Bolt </h1>
+            <h4> ₱108.75 </h4>
+            <select>
+                <option>2pcs.</option>
+                <option>3pcs.</option>
+                <option>5pcs.</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3> Product Description </h3><br>
+            <p> Flat Head Carriage Bolt and Nut is ideal for certain garage
+                door hardware to be used as a replacement fastener. It is made
+                of Steel and Zinc Plated.
+                <br><br>
+                Specifications: <br>
+                Type: Carriage Bolts and Nuts <br>
+                Application: Specifically for wood Garage <br>
+                Length: 1.75" <br>
+                Size: 0.25" x 1.75" <br>
+                Color: Zinc
+                <br><br></p>
+        </div>   
+    </div>
+</div> 
+<!--Related Products-->
+<div class="small-container">
+    <div class="row related-Products">
+        <h2>Related Products</h2>
+    </div>
+</div>
+<div class="small-container">
+<!-- 1st set of products -->
+<div class="row">
+    <div class="col-4">
+        <a href="Screw.html"><img src="screw.jpeg"></a>
+        <h4> Screw </h4>
+    </div>
+    <div class="col-4">
+        <a href="Screwdriver.html"><img src="screwdriver.jpg"></a>
+        <h4> Screwdriver </h4>
+    </div>
+    <div class="col-4">
+        <a href="Flat Screwdriver.html"><img src="flat screwdriver.jpeg"></a>
+        <h4> Flat Screwdriver </h4>
+    </div>
+    <div class="col-4">
+        <a href="Power Handle.html"><img src="Handles/power handle.jpg"></a>
+        <h4> Power Handle </h4>
+    </div>
+</div>
+<!-- 2nd set of products -->
+<div class="row">
+    <div class="col-4">
+        <a href="Scan Tool.html"><img src="Scan tool.jpeg"></a>
+        <h4> Scan Tool </h4>
+    </div>
+    <div class="col-4">
+        <a href="Vacuum Pump.html"><img src="vacuum pump.jpg"></a>
+        <h4> Vacuum Pump </h4>
+    </div>
+    <div class="col-4">
+        <a href="Wheel Alignment.html"><img src="wheel alignment.jpg"></a>
+        <h4> Wheel Alignment </h4>
+    </div>
+    <div class="col-4">
+        <a href="Wheel Balancer.html"><img src="wheel balancer.jpeg"></a>
+        <h4> Wheel Balancer </h4>
+    </div>
+</div>
+    </div>
+</div>
+<!--js for product info-->
+<script>
+    var ProductPic = document.getElementById("ProductPic");
+    var SmallPic = document.getElementsByClassName("small-pic")
+
+        SmallPic[0].onclick = function(){
+            ProductPic.src = SmallPic[0].src;
+        }
+        SmallPic[1].onclick = function(){
+            ProductPic.src = SmallPic[1].src;
+        }
+        SmallPic[2].onclick = function(){
+            ProductPic.src = SmallPic[2].src;
+        }
+        SmallPic[3].onclick = function(){
+            ProductPic.src = SmallPic[3].src;
+        }
+</script>
+</body>
+</html>
+
+
+

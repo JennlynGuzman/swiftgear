@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title> About </title>     
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">                                                                                      </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;
+    500;600;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="200px"></a>
+            </div>
+            <nav> 
+                    <ul>
+                        <li> <a href="index.html"> HOME </a></li>
+                        <li> <a href="products.html"> PRODUCTS </a></li>
+                        <li> <a href="#"> ABOUT </a></li>            
+                        <li> <a href="account.html"> ACCOUNT </a></li>        
+                        <li> <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a></li>
+                    </ul>     
+            </nav>
+        </div>       
+    </div>
+<!--------------------- about ---------------->
+    <div class="section">
+        <div class="about_container">
+            <div class="content-section">
+                    <h2 class="title"> About Us </h2>
+                <div class="content">
+                    <h1> SWIFT GEAR </h1>
+                    <p class="text">  provides tools and equipments for car repair, maintenance, and diagnostics at the convenience of your home or office.
+                        Our expert, highly rated mechanics provide services around Metro Manila.
+
+                        The service is not only convenient, it’s also more affordable.
+                        We are able to negotiate better prices from auto parts vendors.
+                        <span class="dots"> ...</span> <span class="moreText"> <br> <br>
+                        You can also view the maintenance schedule and track 
+                        the service history of your car.
+
+                        You may reach us through our social media or call us at (02) 8453-8569 or mobile no. +639526989521
+                    </p></span>
+                </span></p>
+                <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="others gallery.jpeg">
+			</div>
+            </div>
+        </div>
+    </div>
+    <!--------------js script for read more------------>
+    <script>
+    const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Read More") {
+    readMoreBtn.innerText = "Read Less";
+  } else {
+    readMoreBtn.innerText = "Read More";
+  }
+});
+</script>
+</body>
+</html>
+
+
+

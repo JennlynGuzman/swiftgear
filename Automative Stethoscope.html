@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Automative Stethoscope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="200px"></a>
+            </div>
+            <nav> 
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="products.html"> PRODUCTS </a></li>
+                    <li> <a href="about.html"> ABOUT </a></li>           
+                    <li> <a href="account.html"> ACCOUNT </a></li>        
+                    <li> <a href="cart.html"><img src="cart.png"width="30px" height="30px"></a></li>
+                </ul>      
+            </nav>
+        </div> 
+</div>
+<!----------- product info ------------------>
+<div class="small-container product-info">
+    <div class="info">
+        <div class="col-3">
+            <img src="automative stethoscope.jpg" width="100%" id="ProductPic">
+        <div class="small-pic-row">
+            <div class="small-pic-col">
+                <img src="automative stethoscope.jpg" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="aus1.jfif" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="aus2.jfif" width="100%" class="small-pic">
+            </div>
+            <div class="small-pic-col">
+                <img src="aus3.jfif" width="100%" class="small-pic">
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+            <p> PRODUCT / DIAGNOSTIC TOOL </p>
+            <h1>Automative Stethoscope</h1>
+            <h4> ₱202.00 </h4>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3> Product Description </h3><br>
+            <p>An automotive stethoscope can be the most effective diagnostic tool
+                in your toolbox. It works just like the ones doctors use, allowing 
+                you to “hear inside” a mechanical component. The stethoscope we chose
+                comes with two attachments—a metal probe and a sound amplifier.
+            </p>
+        </div>   
+    </div>
+</div> 
+<!--Related Products-->
+<div class="small-container">
+    <div class="row related-Products">
+        <h2>Related Products</h2>
+    </div>
+</div>
+<div class="small-container">
+<!-- 1st set of products -->
+    <div class="row">
+        <div class="col-4">
+            <a href="Coil Spring Compressor.html"><img src="coil spring compressor.jpeg"></a>
+            <h4> Coil Spring Compressor </h4>
+        </div>
+        <div class="col-4">
+            <a href="Piston Ring Compressor.html"><img src="piston ring compressor.jpeg"></a>
+            <h4> Piston Ring Compressor </h4>
+        </div>
+        <div class="col-4">
+            <a href="Pneumatic Wrench.html"><img src="pneumatic wrench.jpg"></a>
+            <h4> Pneumatic Wrench </h4>
+        </div>
+        <div class="col-4">
+            <a href="Power Handle.html"><img src="power handle.jpg"></a>
+            <h4> Power Handle </h4>
+        </div>
+    </div>
+<!-- 2nd set of products -->
+    <div class="row">
+        <div class="col-4">
+            <a href="Scan Tool.html"><img src="scan tool.jpeg"></a>
+            <h4> Scan Tool </h4>
+        </div>
+        <div class="col-4">
+            <a href="Vacuum Pump.html"><img src="vacuum pump.jpg"></a>
+            <h4> Vacuum Pump </h4>
+        </div>
+        <div class="col-4">
+            <a href="Wheel Alignment.html"><img src="wheel alignment.jpg"></a>
+            <h4> Wheel Alignment </h4>
+        </div>
+        <div class="col-4">
+            <a href="Wheel Balancer.html"><img src="wheel balancer.jpeg"></a>
+            <h4> Wheel Balancer </h4>
+        </div>
+    </div>
+</div>
+<!--js for product info-->
+<script>
+    var ProductPic = document.getElementById("ProductPic");
+    var SmallPic = document.getElementsByClassName("small-pic")
+
+        SmallPic[0].onclick = function(){
+            ProductPic.src = SmallPic[0].src;
+        }
+        SmallPic[1].onclick = function(){
+            ProductPic.src = SmallPic[1].src;
+        }
+        SmallPic[2].onclick = function(){
+            ProductPic.src = SmallPic[2].src;
+        }
+        SmallPic[3].onclick = function(){
+            ProductPic.src = SmallPic[3].src;
+        }
+</script>
+</body>
+</html>
+
+
+
